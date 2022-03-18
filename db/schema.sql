@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS Deparments;
-DROP TABLE IF EXSITS Roles;
+DROP TABLE IF EXISTS Departments;
+DROP TABLE IF EXISTS Roles;
 DROP TABLE IF EXISTS Employees;
 
 
@@ -16,12 +16,11 @@ CREATE TABLE Roles (
     salary DECIMAL(8,2) NOT NULL
     );
 
-CREATE TABLE Employees ( {
+CREATE TABLE Employees ( 
     id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     job_title VARCHAR(30) NOT NULL,
     employee_salary DECIMAL(8,2) NOT NULL,
-    manager VARCHAR(30) NOT NULL
 );
 
