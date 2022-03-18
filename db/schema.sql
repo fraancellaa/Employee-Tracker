@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS Employees;
 
 
 CREATE TABLE Departments (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
     department_name VARCHAR(30),
     department_id VARCHAR(30)
     );
@@ -17,10 +17,10 @@ CREATE TABLE Roles (
     );
 
 CREATE TABLE Employees ( 
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     job_title VARCHAR(30) NOT NULL,
-    employee_salary DECIMAL(8,2) NOT NULL,
+    employee_salary DECIMAL(8,2) NOT NULL
 );
 
