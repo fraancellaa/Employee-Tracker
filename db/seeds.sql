@@ -1,24 +1,24 @@
-INSERT INTO Departments (department_name, department_id)
+INSERT INTO Departments (department_name)
 VALUES
-('Finance', 1),
-('Engineering', 2),
-('Sales', 3),
-('Human Resources', 4);
+('Finance'),
+('Engineering'),
+('Sales'),
+('Human Resources');
 
-INSERT INTO Roles (job_title, role_id, salary)
+INSERT INTO Roles (job_title, salary, department_id)
 VALUES
-('Accountant', 0001, 63000),
-('Recruiter', 0002, 52000),
-('Software Engineer', 0003, 122000),
-('General Manager', 0004, 70000),
-('Business Analyst', 0005, 80000),
-('Digital Marketing', 0006, 65000);
+('Accountant', 63000, 1),
+('Recruiter', 52000, 4),
+('Software Engineer', 122000, 2),
+('General Manager', 70000, 3),
+('Business Analyst', 80000, 2),
+('Digital Marketing', 65000, 3);
 
-INSERT INTO Employees (first_name, last_name, job_title, employee_salary)
+INSERT INTO Employees (first_name, last_name, role_id, manager_id)
 VALUES
-('Jonathan', 'Chow', 'Business Analyst', 80000),
-('Manuel', 'Rodriguez', 'Customer Service', 41000),
-('Andrea', 'Jackson', 'Social Media', 50000),
-('Joshua', 'Thayer', 'Project Manager', 87000),
-('Christina', 'Smith', 'Sales Representative', 53000),
-('Gabriel', 'Cannon', 'Web Designer', 110000);
+('Joshua', 'Thayer', 4, NULL),
+('Jonathan', 'Chow', 1, 1),
+('Manuel', 'Rodriguez', 2, 1),
+('Andrea', 'Jackson', 3, 1),
+('Christina', 'Smith', 5, 1),
+('Gabriel', 'Cannon', 6, 1);
