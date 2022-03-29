@@ -143,7 +143,6 @@ const addRole = () => {
     })
 }
 
-
 // Adding employee to DB
 const addEmployee = () => {
     inquirer
